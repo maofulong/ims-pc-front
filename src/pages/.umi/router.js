@@ -18,6 +18,16 @@ const routes = [
     component: require('../Home/index.js').default,
   },
   {
+    path: '/Home/models/HomeCommon',
+    exact: true,
+    component: require('../Home/models/HomeCommon.js').default,
+  },
+  {
+    path: '/Home/services/HomeCommonApi',
+    exact: true,
+    component: require('../Home/services/HomeCommonApi.js').default,
+  },
+  {
     component: () =>
       React.createElement(
         require('C:/java/code/maofulongself/ims-pc-front/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
